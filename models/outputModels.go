@@ -1,7 +1,5 @@
 package models
 
-import "sync"
-
 type Monthly struct {
 	*AbstractPeriod `json:"period"`
 }
@@ -35,7 +33,6 @@ func (*Absolute) ExtractKey(transaction Transaction) string {
 }
 
 type Statistics struct {
-	mu       sync.Mutex
 	Monthly  `json:"monthly"`
 	Daily    `json:"daily"`
 	Hourly   `json:"hourly"`
@@ -63,8 +60,6 @@ func CreateStatistics() *Statistics {
 }
 
 func (stat *Statistics) AddStat(transaction Transaction) {
-	stat.mu.Lock()
-	defer stat.mu.Unlock()
 	stat.Monthly.AddStat(transaction)
 	stat.Daily.AddStat(transaction)
 	stat.Hourly.AddStat(transaction)

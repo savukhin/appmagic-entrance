@@ -13,4 +13,8 @@ git clone https://github.com/savukhin/appmagic-entrance.git
 ```[bash]
 go run main.go --url https://raw.githubusercontent.com/CryptoRStar/GasPriceTestTask/main/gas_price.json --output result.json
 ```
+- or just run 
+```[bash]
+./appmagic-entrance --url https://raw.githubusercontent.com/CryptoRStar/GasPriceTestTask/main/gas_price.json --output result.json
+```
 - See results in generated file

@@ -1,5 +1,7 @@
 package models
 
+import "sync"
+
 type StatElement struct {
 	Average  float64 `json:"average"`
 	Count    float64 `json:"count"`
@@ -20,6 +22,7 @@ type iPeriod interface {
 
 type AbstractPeriod struct {
 	iPeriod
+	mu   sync.Mutex
 	Stat map[string]*StatElement `json:"statistics"`
 }
 
@@ -30,6 +33,8 @@ func createPeriod() *AbstractPeriod {
 }
 
 func (period *AbstractPeriod) AddStat(transaction Transaction) {
+	period.mu.Lock()
+	defer period.mu.Unlock()
 	key := period.ExtractKey(transaction)
 
 	if period.Stat[key] == nil {
