@@ -9,7 +9,7 @@ func Process(ethereum *models.Ethereum) (*models.Statistics, error) {
 	result := models.CreateStatistics()
 
 	var wg sync.WaitGroup
-	workers := 100
+	workers := 1
 
 	transactionChannel := make(chan *models.Transaction, workers)
 
