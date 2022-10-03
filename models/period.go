@@ -7,15 +7,15 @@ type StatElement struct {
 	FullCost float64 `json:"full cost"`
 }
 
-func (stat *StatElement) AddStat(transaction *Transaction) {
+func (stat *StatElement) AddStat(transaction Transaction) {
 	stat.Count += 1
 	stat.FullCost += transaction.GasValue * transaction.GasPrice
 	stat.Average = stat.FullCost / stat.Count
 }
 
 type iPeriod interface {
-	ExtractKey(transaction *Transaction) string
-	AddStat(transaction *Transaction)
+	ExtractKey(transaction Transaction) string
+	AddStat(transaction Transaction)
 }
 
 type AbstractPeriod struct {
@@ -29,7 +29,7 @@ func createPeriod() *AbstractPeriod {
 	}
 }
 
-func (period *AbstractPeriod) AddStat(transaction *Transaction) {
+func (period *AbstractPeriod) AddStat(transaction Transaction) {
 	key := period.ExtractKey(transaction)
 
 	if period.Stat[key] == nil {

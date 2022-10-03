@@ -3,52 +3,52 @@
 		"period": {
 			"statistics": {
 				"April": {
-					"average": 35779.11840251415,
+					"average": 21948.630525346478,
 					"count": 720,
 					"title": "April",
-					"full cost": 25760965.249810185
+					"full cost": 15803013.978249464
 				},
 				"August": {
-					"average": 2107.341589613999,
-					"count": 121,
+					"average": 1886.579186279994,
+					"count": 120,
 					"title": "August",
-					"full cost": 254988.33234329388
+					"full cost": 226389.5023535993
 				},
 				"February": {
-					"average": 45819.96265061633,
+					"average": 48050.36783488375,
 					"count": 672,
 					"title": "February",
-					"full cost": 30791014.901214175
+					"full cost": 32289847.18504188
 				},
 				"January": {
-					"average": 90471.0124938008,
-					"count": 743,
+					"average": 99420.49712096025,
+					"count": 744,
 					"title": "January",
-					"full cost": 67219962.28289399
+					"full cost": 73968849.85799442
 				},
 				"July": {
-					"average": 4029.344746326639,
+					"average": 4230.580459748167,
 					"count": 744,
 					"title": "July",
-					"full cost": 2997832.4912670194
+					"full cost": 3147551.8620526367
 				},
 				"June": {
-					"average": 13247.361681274513,
+					"average": 14180.761587863684,
 					"count": 720,
 					"title": "June",
-					"full cost": 9538100.41051765
+					"full cost": 10210148.343261853
 				},
 				"March": {
-					"average": 23409.350661970413,
+					"average": 17035.642066484113,
 					"count": 744,
 					"title": "March",
-					"full cost": 17416556.89250599
+					"full cost": 12674517.69746418
 				},
 				"May": {
-					"average": 888751.3336991648,
+					"average": 586493.28541589,
 					"count": 744,
 					"title": "May",
-					"full cost": 661230992.2721786
+					"full cost": 436351004.3494222
 				}
 			}
 		}
@@ -57,46 +57,46 @@
 		"period": {
 			"statistics": {
 				"Friday": {
-					"average": 31091.444140388416,
-					"count": 745,
+					"average": 30628.83782786487,
+					"count": 744,
 					"title": "Friday",
-					"full cost": 23163125.88458937
+					"full cost": 22787855.343931463
 				},
 				"Monday": {
-					"average": 38549.34693549425,
+					"average": 33848.657107734136,
 					"count": 744,
 					"title": "Monday",
-					"full cost": 28680714.12000772
+					"full cost": 25183400.888154197
 				},
 				"Saturday": {
-					"average": 18851.191852683263,
-					"count": 743,
+					"average": 23554.232614258748,
+					"count": 744,
 					"title": "Saturday",
-					"full cost": 14006435.546543663
+					"full cost": 17524349.06500851
 				},
 				"Sunday": {
-					"average": 881336.8903694582,
+					"average": 585923.1696148048,
 					"count": 744,
 					"title": "Sunday",
-					"full cost": 655714646.4348769
+					"full cost": 435926838.19341475
 				},
 				"Thursday": {
-					"average": 37777.55249329316,
+					"average": 40145.99111674478,
 					"count": 744,
 					"title": "Thursday",
-					"full cost": 28106499.05501011
+					"full cost": 29868617.390858114
 				},
 				"Tuesday": {
-					"average": 49398.16866790314,
+					"average": 35437.27013508225,
 					"count": 744,
 					"title": "Tuesday",
-					"full cost": 36752237.488919936
+					"full cost": 26365328.980501197
 				},
 				"Wednesday": {
-					"average": 38691.874062879055,
+					"average": 36310.39370157576,
 					"count": 744,
 					"title": "Wednesday",
-					"full cost": 28786754.302782018
+					"full cost": 27014932.913972367
 				}
 			}
 		}
@@ -104,59 +104,149 @@
 	"hourly": {
 		"period": {
 			"statistics": {
+				"00": {
+					"average": 41884.73665049747,
+					"count": 217,
+					"title": "00",
+					"full cost": 9088987.85315795
+				},
 				"01": {
-					"average": 1010278.148456794,
-					"count": 650,
+					"average": 1008764.6858467115,
+					"count": 217,
 					"title": "01",
-					"full cost": 656680796.496916
+					"full cost": 218901936.8287364
+				},
+				"02": {
+					"average": 668879.5391912201,
+					"count": 217,
+					"title": "02",
+					"full cost": 145146860.00449476
+				},
+				"03": {
+					"average": 332946.17998577276,
+					"count": 217,
+					"title": "03",
+					"full cost": 72249321.05691269
 				},
 				"04": {
-					"average": 24287.250427457795,
-					"count": 651,
+					"average": 24287.250427457824,
+					"count": 217,
 					"title": "04",
-					"full cost": 15811000.028275024
+					"full cost": 5270333.342758348
+				},
+				"05": {
+					"average": 19299.977005530825,
+					"count": 217,
+					"title": "05",
+					"full cost": 4188095.010200189
+				},
+				"06": {
+					"average": 16780.54781619071,
+					"count": 217,
+					"title": "06",
+					"full cost": 3641378.8761133836
 				},
 				"07": {
-					"average": 22108.878190833082,
-					"count": 651,
+					"average": 22108.87819083305,
+					"count": 217,
 					"title": "07",
-					"full cost": 14392879.702232337
+					"full cost": 4797626.567410772
+				},
+				"08": {
+					"average": 16755.692162671654,
+					"count": 217,
+					"title": "08",
+					"full cost": 3635985.1992997485
+				},
+				"09": {
+					"average": 14997.955910152492,
+					"count": 217,
+					"title": "09",
+					"full cost": 3254556.4325030907
 				},
 				"10": {
-					"average": 14090.140446061598,
-					"count": 651,
+					"average": 14090.14044606163,
+					"count": 217,
 					"title": "10",
-					"full cost": 9172681.4303861
+					"full cost": 3057560.476795374
+				},
+				"11": {
+					"average": 12838.175619420519,
+					"count": 217,
+					"title": "11",
+					"full cost": 2785884.1094142525
+				},
+				"12": {
+					"average": 16747.924067059572,
+					"count": 217,
+					"title": "12",
+					"full cost": 3634299.5225519272
 				},
 				"13": {
-					"average": 24159.4054230184,
-					"count": 651,
+					"average": 24159.405423018434,
+					"count": 217,
 					"title": "13",
-					"full cost": 15727772.930384979
+					"full cost": 5242590.976795
+				},
+				"14": {
+					"average": 45660.69909424997,
+					"count": 217,
+					"title": "14",
+					"full cost": 9908371.703452243
+				},
+				"15": {
+					"average": 35877.143917501715,
+					"count": 217,
+					"title": "15",
+					"full cost": 7785340.230097872
 				},
 				"16": {
-					"average": 55876.64411990147,
-					"count": 651,
+					"average": 55876.64411990161,
+					"count": 217,
 					"title": "16",
-					"full cost": 36375695.32205586
+					"full cost": 12125231.774018649
+				},
+				"17": {
+					"average": 57286.15236949535,
+					"count": 217,
+					"title": "17",
+					"full cost": 12431095.064180491
+				},
+				"18": {
+					"average": 42133.140374652285,
+					"count": 217,
+					"title": "18",
+					"full cost": 9142891.461299546
 				},
 				"19": {
-					"average": 66280.06626934641,
-					"count": 651,
+					"average": 66280.06626934637,
+					"count": 217,
 					"title": "19",
-					"full cost": 43148323.14134451
+					"full cost": 14382774.380448163
+				},
+				"20": {
+					"average": 40801.60710496498,
+					"count": 217,
+					"title": "20",
+					"full cost": 8853948.741777401
+				},
+				"21": {
+					"average": 44029.10290053106,
+					"count": 217,
+					"title": "21",
+					"full cost": 9554315.329415241
 				},
 				"22": {
-					"average": 36713.194804913874,
-					"count": 651,
+					"average": 36713.19480491384,
+					"count": 217,
 					"title": "22",
-					"full cost": 23900289.81799893
+					"full cost": 7966763.272666303
 				},
 				"23": {
-					"average": 973.9631361452346,
-					"count": 1,
+					"average": 35139.05327806733,
+					"count": 217,
 					"title": "23",
-					"full cost": 973.9631361452346
+					"full cost": 7625174.561340611
 				}
 			}
 		}
@@ -165,10 +255,10 @@
 		"period": {
 			"statistics": {
 				"absolute": {
-					"average": 156530.41721058582,
+					"average": 112264.07887400982,
 					"count": 5208,
 					"title": "absolute",
-					"full cost": 815210412.8327309
+					"full cost": 584671322.7758431
 				}
 			}
 		}

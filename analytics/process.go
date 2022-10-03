@@ -9,9 +9,9 @@ func Process(ethereum *models.Ethereum) (*models.Statistics, error) {
 	result := models.CreateStatistics()
 
 	var wg sync.WaitGroup
-	workers := 1
+	workers := 100
 
-	transactionChannel := make(chan *models.Transaction, workers)
+	transactionChannel := make(chan models.Transaction, workers)
 
 	for worker := 0; worker < workers; worker++ {
 		wg.Add(1)
@@ -26,7 +26,7 @@ func Process(ethereum *models.Ethereum) (*models.Statistics, error) {
 	}
 
 	for _, transaction := range ethereum.Transactions.Transaction {
-		transactionChannel <- &transaction
+		transactionChannel <- transaction
 	}
 	close(transactionChannel)
 

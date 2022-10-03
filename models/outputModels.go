@@ -6,7 +6,7 @@ type Monthly struct {
 	*AbstractPeriod `json:"period"`
 }
 
-func (*Monthly) ExtractKey(transaction *Transaction) string {
+func (*Monthly) ExtractKey(transaction Transaction) string {
 	return transaction.Time.time.Month().String()
 }
 
@@ -14,7 +14,7 @@ type Daily struct {
 	*AbstractPeriod `json:"period"`
 }
 
-func (*Daily) ExtractKey(transaction *Transaction) string {
+func (*Daily) ExtractKey(transaction Transaction) string {
 	return transaction.Time.time.Format("Monday")
 }
 
@@ -22,7 +22,7 @@ type Hourly struct {
 	*AbstractPeriod `json:"period"`
 }
 
-func (*Hourly) ExtractKey(transaction *Transaction) string {
+func (*Hourly) ExtractKey(transaction Transaction) string {
 	return transaction.Time.time.Format("15")
 }
 
@@ -30,7 +30,7 @@ type Absolute struct {
 	*AbstractPeriod `json:"period"`
 }
 
-func (*Absolute) ExtractKey(transaction *Transaction) string {
+func (*Absolute) ExtractKey(transaction Transaction) string {
 	return "absolute"
 }
 
@@ -62,11 +62,11 @@ func CreateStatistics() *Statistics {
 	return result
 }
 
-func (stat *Statistics) AddStat(transaction *Transaction) {
+func (stat *Statistics) AddStat(transaction Transaction) {
 	stat.mu.Lock()
+	defer stat.mu.Unlock()
 	stat.Monthly.AddStat(transaction)
 	stat.Daily.AddStat(transaction)
 	stat.Hourly.AddStat(transaction)
 	stat.Absolute.AddStat(transaction)
-	stat.mu.Unlock()
 }
